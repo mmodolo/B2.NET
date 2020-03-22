@@ -1,10 +1,11 @@
-﻿using B2Net.Models;
+﻿using B2.Net.Tests;
+using B2Net.Models;
 
 namespace B2Net.Tests {
 	public class BaseTest {
 		public B2Options Options { get; set; }
 
-		// TODO Change these to valid keys to run tests
+		//TODO: Alterar credenciais
 		protected string applicationKey = "K0016q0BcoroQmkADj/Kne4y3ul6AWc";
 		protected string applicationKeyId = "00151189a8b4c7a000000000e";
 

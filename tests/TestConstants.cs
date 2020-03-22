@@ -6,16 +6,9 @@ using System.Threading.Tasks;
 
 namespace B2.Net.Tests {
 	public static class TestConstants {
-		public static string AccountId {
-			get { return ""; }
-		}
+		//TODO: Alterar credenciais
+		public static string KeyId = "";
 
-		public static string ApplicationKey {
-			get { return ""; }
-		}
-
-		public static string BucketId {
-			get { return ""; }
-		}
+		public static string ApplicationKey = "";
 	}
 }
