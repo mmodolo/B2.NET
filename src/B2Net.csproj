@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Description>.NET library for Backblaze's B2 Cloud Storage</Description>
     <AssemblyTitle>B2.Net</AssemblyTitle>
-    <TargetFrameworks>netstandard1.5;net45</TargetFrameworks>
+    <TargetFrameworks>netcoreapp3.1</TargetFrameworks>
     <AssemblyName>B2.Net</AssemblyName>
     <NetStandardImplicitPackageVersion>1.6.0</NetStandardImplicitPackageVersion>
     <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
