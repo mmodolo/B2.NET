@@ -6,11 +6,11 @@ namespace B2Net.Tests {
 		public B2Options Options { get; set; }
 
 		//TODO: Alterar credenciais
-		protected string applicationKey = "K0016q0BcoroQmkADj/Kne4y3ul6AWc";
-		protected string applicationKeyId = "00151189a8b4c7a000000000e";
+		protected string applicationKey = "00022d3d9f6579050f1fea8606aca29ca9e324a689";
+		protected string applicationKeyId = "16ba0ce97c1d";
 
-		protected string restrictedApplicationKey = "K0019m9qz095omc+WsnREy5mWsxNmtQ";
-		protected string restrictedApplicationKeyId = "00151189a8b4c7a000000000d";
+		protected string restrictedApplicationKey = "K0001Uev/N/Sd8dvVuP0vojW0D57wgc";
+		protected string restrictedApplicationKeyId = "00016ba0ce97c1d0000000003";
 
 		public BaseTest() {
 			Options = new B2Options() {
