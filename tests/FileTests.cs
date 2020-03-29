@@ -35,7 +35,8 @@ namespace B2Net.Tests {
 
 			if (existingBucket != null) {
 				TestBucket = existingBucket;
-			} else {
+			}
+			else {
 				TestBucket = Client.Buckets.Create(BucketName, BucketTypes.allPrivate).Result;
 			}
 		}
@@ -143,6 +144,22 @@ namespace B2Net.Tests {
 			FilesToDelete.Add(file);
 
 			Assert.AreEqual(hash, file.ContentSHA1, "File hashes did not match.");
+		}
+
+		[TestMethod]
+		public void FileUploadAnuncioTest() {
+			var pathAnuncio = Path.Combine(FilePath, "anuncioteste");
+
+			foreach (var fileName in Directory.GetFiles(pathAnuncio)) {
+				var fileData = File.ReadAllBytes(fileName);
+				string hash = Utilities.GetSHA1Hash(fileData);
+				var file = Client.Files.Upload(fileData, Path.GetFileName(fileName), TestBucket.BucketId).Result;
+
+				// Clean up.
+				FilesToDelete.Add(file);
+
+				Assert.AreEqual(hash, file.ContentSHA1, "File hashes did not match.");
+			}
 		}
 
 		[TestMethod]
